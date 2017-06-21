@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kafka.pub.console", "kafka.pub.console\kafka.pub.console.csproj", "{2116AE2A-60F0-4F60-98BC-3D1872BA33A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kafka.sub.console", "kafka.sub.console\kafka.sub.console.csproj", "{37F9CA8C-CC3A-44F5-AB4A-2B08150A347C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{894E6694-45C4-468D-BBD5-20CCA9D59617}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2116AE2A-60F0-4F60-98BC-3D1872BA33A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2116AE2A-60F0-4F60-98BC-3D1872BA33A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2116AE2A-60F0-4F60-98BC-3D1872BA33A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2116AE2A-60F0-4F60-98BC-3D1872BA33A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37F9CA8C-CC3A-44F5-AB4A-2B08150A347C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37F9CA8C-CC3A-44F5-AB4A-2B08150A347C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37F9CA8C-CC3A-44F5-AB4A-2B08150A347C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37F9CA8C-CC3A-44F5-AB4A-2B08150A347C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
