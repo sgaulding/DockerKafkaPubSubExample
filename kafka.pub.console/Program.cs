@@ -22,7 +22,7 @@ namespace kafka.pub.console
                         { "queue.buffering.max.ms", "10000" },
                         { "socket.blocking.max.ms", "10000" },
                         { "socket.nagle.disable", "true" },
-                        { "debug", "protocol" },
+                        //{ "debug", "protocol" },
                         { "log.connection.close", "false" }
                     };
 
@@ -32,16 +32,14 @@ namespace kafka.pub.console
             {
                 Console.WriteLine($"{producer.Name} producing on \"{kafkaTopic}\". q to exit.");
 
-                string text;
-                while ((text = Console.ReadLine()) != "q")
+                string text = Console.ReadLine();
+                while (text != "q")
                 {
                     var deliveryReport = producer.ProduceAsync(kafkaTopic, string.Empty, text).GetAwaiter().GetResult();
                     Console.WriteLine($"Partition: {deliveryReport.Partition}, Offset: {deliveryReport.Offset}");
-                }
 
-                // Tasks are not waited on synchronously (ContinueWith is not synchronous),
-                // so it's possible they may still in progress here.
-                producer.Flush(TimeSpan.FromSeconds(10).Milliseconds);
+                    text = Console.ReadLine();
+                }
             }
             Console.WriteLine($"Ended Kafka Producer Console - {DateTime.Now:G}");
         }

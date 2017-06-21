@@ -25,7 +25,7 @@ namespace kafka.sub.console
                         { "queue.buffering.max.ms", "1000" },
                         { "socket.blocking.max.ms", "1000" },
                         { "socket.nagle.disable", "true" },
-                        { "debug", "protocol" },
+                        //{ "debug", "protocol" },
                         { "log.connection.close", "false" }
                     };
 
